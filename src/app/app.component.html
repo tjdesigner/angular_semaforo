@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <div class="container">
+    <div class="semaforo">
+      <button
+        [ngClass]="!clickedRed ? 'red' : 'clickedRed'"
+        (click)="red($event)"
+      ></button>
+      <button
+        [ngClass]="!clickedYellow ? 'yellow' : 'clickedYellow'"
+        (click)="yellow($event)"
+      ></button>
+      <button
+        [ngClass]="!clickedGreen ? 'green' : 'clickedGreen'"
+        (click)="green($event)"
+      ></button>
+    </div>
+  </div>
+</div>
